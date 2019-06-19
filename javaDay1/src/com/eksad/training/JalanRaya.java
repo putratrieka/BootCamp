@@ -26,8 +26,9 @@ public class JalanRaya {
 		
 		for (Motor currentMotor : arrMotor) {
 			if(currentMotor instanceof MotorKopling) {// 
-				System.out.println(currentMotor.getMerk()); // cast
-				MotorKopling kopling = (MotorKopling) currentMotor;
+				System.out.println(currentMotor.getMerk()); 
+				MotorKopling kopling = (MotorKopling) currentMotor;// cast
+				//((MotorKopling) currentMotor).masukinGigi();
 				System.out.println(kopling.masukinGigi());;
 			}
 			System.out.println(currentMotor.maju());
