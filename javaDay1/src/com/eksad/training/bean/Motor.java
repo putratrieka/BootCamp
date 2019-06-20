@@ -35,7 +35,6 @@ public class Motor implements Kendaraan{
 	public boolean equals(Object obj) {
 		if (this == obj) 
 			return true;
-		System.out.println("---");
 		if (!(obj instanceof Motor)) 
 			return false;
 			Motor motor = (Motor) obj;
@@ -43,6 +42,7 @@ public class Motor implements Kendaraan{
 			return true;
 		else
 			return false;
+		
 		
 	}
 	

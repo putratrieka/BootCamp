@@ -30,7 +30,7 @@ public class Human {
 		this.skinColor = skinColor;
 	}
 	public String walk() {
-		return name + "Berjalan ... ... ... ...";
+		return name + " Berjalan ... ... ... ...";
 	}
 
 

@@ -10,13 +10,13 @@ public class Main {
 		
 		human.setName("Bambang");
 		human.setAge(23);
-		human.setEyeColor("Blue");
-		human.setSkinColor("Darkest Brown");	
+		human.setEyeColor("Coklat");
+		human.setSkinColor("Sawo Matang");	
 		
-		activity.speaking(human);
-		System.out.println(human.walk());
+		activity.speaking(human);	
 		System.out.println(activity.getSpeak());
 		System.out.println("============================");
+		System.out.println(human.walk());
 		
 	}
 }
