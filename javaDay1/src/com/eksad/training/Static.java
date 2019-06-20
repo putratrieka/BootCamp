@@ -20,8 +20,8 @@ public class Static {
 		
 		
 		Kalkulator kalkulator = new Kalkulator();
-		kalkulator.setKiri(3);
-		kalkulator.setKanan(2);
+		kalkulator.setKiri(6);
+		kalkulator.setKanan(9);
 		System.out.println(kalkulator.proses());
 		System.out.println(Kalkulator.tambah(4, 3));
 	}

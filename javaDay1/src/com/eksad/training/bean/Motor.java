@@ -31,7 +31,20 @@ public class Motor implements Kendaraan{
 	public String maju() {
 		return "Motor "+merk+": brum brum";
 	}
-	
+	@Override
+	public boolean equals(Object obj) {
+		if (this == obj) 
+			return true;
+		System.out.println("---");
+		if (!(obj instanceof Motor)) 
+			return false;
+			Motor motor = (Motor) obj;
+		if (this.getMerk().equals(motor.getMerk()))
+			return true;
+		else
+			return false;
+		
+	}
 	
 
 }
