@@ -1,7 +1,7 @@
 package assignment.oop;
 
 public class Human {
-	private String name;
+	protected String name;
 	private int age;
 	private String eyeColor;
 	private String skinColor;
@@ -29,6 +29,9 @@ public class Human {
 	public void setSkinColor(String skinColor) {
 		this.skinColor = skinColor;
 	}
-	
+	public String walk() {
+		return name + "Berjalan ... ... ... ...";
+	}
+
 
 }

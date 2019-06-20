@@ -10,7 +10,6 @@ public class Motor implements Kendaraan{
 	protected String merk;
 	protected Integer tahunPembuatan;
 	
-	
 	public int getCc() {
 		return cc;
 	}

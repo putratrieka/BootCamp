@@ -14,6 +14,7 @@ public class Main {
 		human.setSkinColor("Darkest Brown");	
 		
 		activity.speaking(human);
+		System.out.println(human.walk());
 		System.out.println(activity.getSpeak());
 		System.out.println("============================");
 		

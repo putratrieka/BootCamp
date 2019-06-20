@@ -7,8 +7,8 @@ public class Writing {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Pensil pensil1 = new Pensil();		
-		Pensil pensil2 = new Pensil();
+		Pensil pensil1 = new Pensil("hitam");		
+		Pensil pensil2 = new Pensil("hitam");
 		
 		pensil1.setWarna("pink");
 		pensil2.setWarna("biru");

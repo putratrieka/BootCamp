@@ -6,6 +6,13 @@ public class Pensil {
 	private String tipe;
 	private String panjang;
 	
+	public Pensil(String warna) {//constructor
+		// TODO Auto-generated constructor stub
+		this.warna = warna;
+		
+	}
+
+
 	public String getWarna() {
 		return warna;
 	}	

@@ -18,9 +18,9 @@ public class Activity {
 		this.eat = eat;
 	}
 	public void speaking(Human human) {
-		speak = speak +"My Name is "+ human.getName()+"\n";
-		speak = speak +"I`m "+ human.getAge() + " years old"+"\n";
-		speak = speak + "and I have a "+human.getEyeColor() + " eyes color";
+		speak = speak +"Nama saya "+ human.getName()+","+"\n";
+		speak = speak +"Umur saya "+ human.getAge() + " tahun"+","+"\n";
+		speak = speak + "bola mata saya berwarna "+human.getEyeColor();
 	}
 	public String getSpeak() {
 		return speak;

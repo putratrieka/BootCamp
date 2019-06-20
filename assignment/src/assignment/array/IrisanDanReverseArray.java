@@ -13,6 +13,8 @@ public class IrisanDanReverseArray {
 			for (int j = 0; j < arrB.length; j++) {
 				if(arrA[i] ==arrB[j]) {
 					System.out.print(arrA[i]+" ");
+					break;
+					
 				}
 			}
 		}
