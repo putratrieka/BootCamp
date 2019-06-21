@@ -27,11 +27,12 @@ public class Lambda {
 				return "Gojek lagi bg....";
 			}
 		});
+		System.out.println("========================");
 		//cara 3 functional programming
 		bos.naikKendaraan(()->"Ajo Gojek");
 		bos.naikKendaraan(()->{
 			String bgGojek = "Faisal";
-			return "Ayo bang" + bgGojek;
+			return "Ayo bang " + bgGojek;
 		});
 	}
 }
