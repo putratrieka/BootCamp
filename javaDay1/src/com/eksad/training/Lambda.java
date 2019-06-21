@@ -29,6 +29,7 @@ public class Lambda {
 				return "Gojek lagi bg....";
 			}
 		});
+		bos.naikKendaraan(kendaraan);
 		System.out.println("========================");
 		//cara 3 functional programming
 		bos.naikKendaraan(()->"Ajo Gojek");

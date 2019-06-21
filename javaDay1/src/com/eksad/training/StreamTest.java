@@ -2,8 +2,6 @@ package com.eksad.training;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.function.Function;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 import com.eksad.training.bean.Laptop;
@@ -58,8 +56,10 @@ public class StreamTest {
 		Double rataRata1 = totalBerat.doubleValue()/jumlah.doubleValue();
 		System.out.println(rataRata1);
 		// metode stream
+
 		Double rataRata2 = laptopList.stream()
-				.map(laptop ->laptop.getBerat())
+				.map(laptop ->laptop.getBerat())// cara 1 unt simplifikasi
+//				.map(Laptop::getBerat)// cara 2 unt simplifikasi (invoke)
 				.filter(berat -> berat != null)
 				.collect(Collectors.averagingDouble(berat -> berat.doubleValue()));
 //				.mapToDouble(berat -> berat)
