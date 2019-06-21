@@ -1,7 +1,7 @@
 package assignment.oop.main;
 
 import assignment.oop.Activity;
-import assignment.oop.Cat;
+import assignment.oop.Millennials;
 import assignment.oop.Female;
 import assignment.oop.Human;
 
@@ -16,10 +16,10 @@ public class Main {
 		human.setSkinColor("Sawo Matang");	
 		
 		Female female = new Female();
-		female.setName("Siti");
-		female.setAge(25);
+		female.setName("Manis");
+		female.setAge(55);
 		female.setSkinColor("putih");
-		
+		female.setEyeColor("hijau");
 		
 		
 		activity.speaking(female);	
@@ -30,8 +30,8 @@ public class Main {
 		
 		System.out.println("============================");
 		
-		Cat cat = new Cat();
-		cat.catWalk(female);
+		Millennials millennials = new Millennials();
+		millennials.otw(female);
 		
 		
 	}
