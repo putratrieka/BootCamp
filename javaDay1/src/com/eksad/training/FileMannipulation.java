@@ -12,7 +12,7 @@ import java.util.List;
 public class FileMannipulation {
 	public static void main(String[] args) {
 		// Untuk mengambil data dari PC
-		//get file ver.1 (old)
+		//get file ver.1 (old) 
 		FileReader fileReader = null;
 		BufferedReader bufferedReader = null;
 		try {
@@ -28,6 +28,9 @@ public class FileMannipulation {
 		} catch (IOException e) {
 			
 			e.printStackTrace();
+//					
+		}
+		finally {
 			try {
 				System.out.println("closing reader");
 				if (bufferedReader != null) {
@@ -38,11 +41,10 @@ public class FileMannipulation {
 				}
 				System.out.println("closing done");
 				
-			} catch (IOException e2) {
+			} catch (IOException e) {
 				// TODO: handle exception
 				e.printStackTrace();
 			}
-			
 		}
 		
 		
