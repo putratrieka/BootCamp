@@ -1,10 +1,12 @@
 package assignment.oop;
 
-public class Human {
+public class Human implements Mammals{
+	//Encapsulation
 	protected String name;
-	private int age;
-	private String eyeColor;
-	private String skinColor;
+	protected int age;
+	protected String eyeColor;
+	protected String skinColor;
+	
 	public String getName() {
 		return name;
 	}
@@ -30,8 +32,9 @@ public class Human {
 		this.skinColor = skinColor;
 	}
 	public String walk() {
-		return name + " Berjalan ... ... ... ...";
+		return name + " Berjalan tak tak tak tak";
 	}
+
 
 
 }

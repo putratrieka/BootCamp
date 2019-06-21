@@ -1,6 +1,7 @@
 package com.eksad.training.bean;
 
 public class Ajudan implements Kendaraan{
+	
 
 	@Override
 	public String maju() {

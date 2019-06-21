@@ -1,6 +1,8 @@
 package assignment.oop.main;
 
 import assignment.oop.Activity;
+import assignment.oop.Cat;
+import assignment.oop.Female;
 import assignment.oop.Human;
 
 public class Main {
@@ -13,10 +15,24 @@ public class Main {
 		human.setEyeColor("Coklat");
 		human.setSkinColor("Sawo Matang");	
 		
-		activity.speaking(human);	
+		Female female = new Female();
+		female.setName("Siti");
+		female.setAge(25);
+		female.setSkinColor("putih");
+		
+		
+		
+		activity.speaking(female);	
 		System.out.println(activity.getSpeak());
 		System.out.println("============================");
-		System.out.println(human.walk());
+		System.out.println(female.selfie());
+		System.out.println(female.walk());
+		
+		System.out.println("============================");
+		
+		Cat cat = new Cat();
+		cat.catWalk(female);
+		
 		
 	}
 }

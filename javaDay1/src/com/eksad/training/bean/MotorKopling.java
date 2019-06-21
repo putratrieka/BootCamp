@@ -8,6 +8,7 @@ public class MotorKopling extends Motor{
 		
 		return "jegreg";
 	}
+	
 
 	@Override
 	public String maju() {
