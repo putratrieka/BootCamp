@@ -24,15 +24,20 @@ public class JalanRaya {
 		arrMotor[2] = motorKopling;
 		
 		
-//		for (Motor currentMotor : arrMotor) {
-//			if(currentMotor instanceof MotorKopling) {// 
-//				System.out.println(currentMotor.getMerk()); 
-//				MotorKopling kopling = (MotorKopling) currentMotor;// cast
-//				//((MotorKopling) currentMotor).masukinGigi();
-//				System.out.println(kopling.masukinGigi());;
-//			}
-//			System.out.println(currentMotor.maju());
-//		}
+		for (Motor currentMotor : arrMotor) {
+			try {
+				if(currentMotor instanceof MotorKopling) {// 
+					System.out.println(currentMotor.getMerk()); 
+					MotorKopling kopling = (MotorKopling) currentMotor;// cast
+					//((MotorKopling) currentMotor).masukinGigi();
+					System.out.println(kopling.masukinGigi());;
+				}	
+			} catch (IndexOutOfBoundsException e) {
+				e.printStackTrace();
+			}
+			
+			System.out.println(currentMotor.maju());
+		}
 		
 		Bos bos = new Bos();
 		bos.naikKendaraan(motorMatic);

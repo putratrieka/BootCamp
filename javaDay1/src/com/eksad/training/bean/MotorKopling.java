@@ -5,6 +5,12 @@ public class MotorKopling extends Motor{
 	
 	public String masukinGigi() {
 		gigiMasuk = true;
+		try {
+			Integer[] integer= new Integer[2];
+			System.out.println(integer[4]);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
 		
 		return "jegreg";
 	}
